@@ -168,13 +168,13 @@ public:
             system("cls");
             display();
             if (winner == 0) {
-                cout << "   DRAW,thappichita...\n";
+                cout << "   DRAW\n";
             }
             else if (winner == 1) {
-                cout << "   YOU LOST\nComputer kittalam thothu pora vekkama illa ;D\n";
+                cout << "   YOU LOST\n\n";
             }
             else if (winner == 2) {
-                cout << "YOU WON\nSeri palla kaattatha computer tha\n";
+                cout << "YOU WON\n\n";
             }
         }
     }
@@ -191,18 +191,18 @@ public:
 
 int main() {
     board b;
-    cout << "MAMAE game aadriya :D\n\n";
+    cout << "tic tac toe.cpp :D\n\n";
     while (true) {
         system("cls");
         b.reference();
         b.game_loop();
-        cout << "\n\nInnoru aaduriya ..?\n";
-        cout << " yes na \"1\" aluthu\n illana \"0\" aluthu : ";
+        cout << "\n\nplay again ..?\n";
+        cout << " yes - \"1\" \n n0- \"0\"  : ";
         bool next;
         cin >> next;
         if (!next) {
             system("cls");
-            cout << "OOMBU";
+            cout << "The End";
             break;
         }
         else {
